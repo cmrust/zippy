@@ -23,4 +23,4 @@ And so, this script was born:
 
 <sub><sup>Note: The Python v2.3 dependency comes from the optparse lib.
 
-<sub><sup>Note 2: Use freely under the MIT License.
+<sub><sup>Note 2: Feel free to do whatever this, per the MIT License.

@@ -22,5 +22,4 @@ And so, this script was born:
       -p PASSWORD     specify a password (optional)
 
 <sub><sup>Note: The Python v2.3 dependency comes from the optparse lib.
-
-Note 2: Use freely under the MIT License.</sup></sub>
+Note 2: Use freely under the MIT License.

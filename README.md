@@ -1,8 +1,5 @@
-zippy
-=====
-
-python unzipping utility 
-------------------------
+zippy - python unzipping utility 
+--------------------------------
 
 - Unzip PKZIP (WinZip) format files, including Zip64
 - Unzip password protected zip files
@@ -20,4 +17,4 @@ I recently found myself needing to unzip a Zip64 file on an older UNIX platform.
       -e EXPORT_PATH  specify an export path (optional)
       -p PASSWORD     specify a password (optional)
 
-Note: The Python v2.3 dependency comes from the optparse lib. I would switch to argparse, since optparse is now deprecated, but I'm trying to keep support out-of-the-box for older systems.
+<sub><sup>Note: The Python v2.3 dependency comes from the optparse lib. I would switch to argparse, since optparse is now deprecated, but I'm trying to keep support out-of-the-box for older systems.</sup></sub>

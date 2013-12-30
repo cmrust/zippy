@@ -1,8 +1,10 @@
 zippy
 =====
 
-Unzip Zip64 files using only python
------------------------------------
+Python unzip utility 
+--------------------
+
+- Unzip PK-ZIP format files, including Zip64
 
 I recently found myself needing to unzip a Zip64 file on an older UNIX platform. The system didn't have access to v6.0 or greater of the UnZip tool, where support was added, and so I started digging around. It seems Python has been supporting the file format for a while now, and so I whipped up this script to do some unzipping!
 

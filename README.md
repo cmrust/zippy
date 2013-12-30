@@ -4,9 +4,9 @@ zippy - python unzipping utility
 - Unzip PKZIP (WinZip) format files, including Zip64
 - Unzip password protected zip files
 - Compatible with Python v2.3 or greater
-- Tested on Linux systems
+- Tested in Unix/Linux Bash shells (should technically work on Macs)
 
-I recently found myself failing to unzip a Zip64 file on an old UNIX box.
+I recently found myself failing to extract a Zip64 file on an old UNIX box.
 
 The system didn't have access to Unzip 6.0, where support for the format was added.
 
@@ -25,4 +25,4 @@ And, so this script was born:
       -p PASSWORD     specify a password (optional)
 
 <sub><sup>Note: The Python v2.3 dependency comes from the optparse lib.</sup></sub>
-<sub><sup>Note 2 Free to use under the MIT License.</sup></sub>
+<sub><sup>Note 2: Use freely under the MIT License.</sup></sub>

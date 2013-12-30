@@ -9,7 +9,7 @@ python unzipping utility
 - Works from Unix/Linux command line
 - Works with Python v2.3 or greater
 
-I recently found myself needing to unzip a Zip64 file on an older UNIX platform. The system didn't have access to v6.0 or greater of the UnZip CLI tool, where 64 bit support was added. So, I started digging around. It seems Python has been supporting the file format for a while now, and so I whipped up this script to do some unzipping!
+I recently found myself needing to unzip a Zip64 file on an older UNIX platform. The system didn't have access to v6.0 or greater of the UnZip CLI tool, where 64 bit support was added, and so I started digging around. It seems Python has been supporting the file format for a while now, and so here's a script do some unzipping.
 
 This code should be compatible on any Linux system running Python v2.3 or greater.
 

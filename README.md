@@ -9,7 +9,7 @@ zippy - python unzipping utility
 I recently found myself failing to extract a Zip64 file on an old UNIX box.
 The system didn't have access to Unzip 6.0, where support for the format was added.
 But, it seems Python's zipfile library has supported 64 bit zips for a while now.
-And, so this script was born: 
+And so, this script was born: 
 
     $ ./zip.py
     zippy: Extracts Zip & Zip64 files

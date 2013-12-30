@@ -7,6 +7,7 @@ import os
 
 def unzip(filename,path=None,password=None):
     try:
+        print "[+] Unzipping file: " + filename
         zippy = zipfile.ZipFile(filename)
         zippy.extractall(path=path,pwd=password)
         print "[+] Unzip complete"
@@ -34,14 +35,23 @@ def main():
 
     # Check that zip_file is accessible
     if not os.path.isfile(zip_file):
-        print "[-] ERROR: " + zip_file + " does not exist"
+        print "[-] ERROR: " + zip_file + " file does not exist"
         exit(1)
     if not os.access(zip_file, os.R_OK):
-        print "[-] ERROR: " + zip_file + " access denied"
+        print "[-] ERROR: " + zip_file + " access denied (file not readable)"
         exit(1)
 
+    # Check that export_path (optional) is executable
+    if options.export_path is not None:
+        export_path = options.export_path
+        if not os.path.isdir(export_path):
+            print "[-] ERROR: " + export_path + " dir does not exist"
+            exit(1)
+        if not os.access(export_path, os.X_OK):
+            print "[-] ERROR: " + export_path + " access denied (dir not executable)"
+            exit(1)
+
     # Unzip zip_file
-    print "[+] Unzipping file: " + zip_file
     unzip(zip_file, options.export_path, options.password)
 
 if __name__ == '__main__':

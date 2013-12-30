@@ -4,14 +4,11 @@ zippy
 python unzipping utility 
 ------------------------
 
-- Unzip PK-ZIP format files, including Zip64
+- Unzip PKZIP (WinZip) format files, including Zip64
 - Unzip password protected zip files
-- Works from Unix/Linux command line
-- Works with Python v2.3 or greater
+- Compatible with Python v2.3 or greater
 
 I recently found myself needing to unzip a Zip64 file on an older UNIX platform. The system didn't have access to v6.0 or greater of the UnZip CLI tool, where 64 bit support was added, and so I started digging around. It seems Python has been supporting the file format for a while now, and so here's a script do some unzipping.
-
-This code should be compatible on any Linux system running Python v2.3 or greater.
 
     $ ./zippy
     zippy: Extracts Zip & Zip64 files

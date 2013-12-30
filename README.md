@@ -5,7 +5,7 @@ zippy - python unzipping utility
 - Unzip password protected zip files
 - Compatible with Python v2.3 or greater
 
-I recently found myself needing to unzip a Zip64 file on an older UNIX platform. The system didn't have access to v6.0 or greater of the UnZip CLI tool, where 64 bit support was added, and so I started digging around. It seems Python has been supporting the file format for a while now, and so here's a script do some unzipping.
+I recently found myself trying and failing to unzip a Zip64 file on an older UNIX system. The box didn't have access to Unzip 6.0, where support for the format was added. But, it seems Python's zipfile library has been supporting the format for a while now and so here's a script if you find yourself in the same spot.
 
     $ ./zippy
     zippy: Extracts Zip & Zip64 files
@@ -17,4 +17,4 @@ I recently found myself needing to unzip a Zip64 file on an older UNIX platform.
       -e EXPORT_PATH  specify an export path (optional)
       -p PASSWORD     specify a password (optional)
 
-<sub><sup>Note: The Python v2.3 dependency comes from the optparse lib. I would switch to argparse, since optparse is now deprecated, but I'm trying to keep support out-of-the-box for older systems.</sup></sub>
+<sub><sup>Note: The Python v2.3 dependency comes from the optparse lib.</sup></sub>

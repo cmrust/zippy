@@ -5,7 +5,7 @@ zippy - python unzipping utility
 - Unzip password protected zip files
 - Compatible with Python v2.3 or greater
 
-I recently found myself trying and failing to unzip a Zip64 file on an older UNIX system. The box didn't have access to Unzip 6.0, where support for the format was added. But, it seems the Python library zipfile has supported the format for a while now. If you find yourself in the same spot, here's a script.
+I recently found myself trying and failing to unzip a Zip64 file on an old UNIX box. The system didn't have access to Unzip 6.0, where support for the format was added. But, it seems the Python library zipfile has supported the format for a while now. If you happen to find yourself in the same spot, here's a script.
 
     $ ./zip.py
     zippy: Extracts Zip & Zip64 files

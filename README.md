@@ -4,6 +4,7 @@ zippy - python unzipping utility
 - Unzip PKZIP (WinZip) format files, including Zip64
 - Unzip password protected zip files
 - Compatible with Python v2.3 or greater
+- Tested on Linux systems
 
 I recently found myself failing to unzip a Zip64 file on an old UNIX box.
 
